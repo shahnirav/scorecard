@@ -1,0 +1,408 @@
+{
+    "success": true,
+    "results": [{
+            "name": "INTL CONSOLIDATED AIRLINES GROUP SA ORD EUR0.10 (CDI)",
+            "value": "IAG"
+        },
+        {
+            "name": "INFORMA PLC ORD 0.1P",
+            "value": "INF"
+        },
+        {
+            "name": "STANDARD CHARTERED PLC ORD USD0.50",
+            "value": "STAN"
+        },
+        {
+            "name": "NEXT PLC ORD 10P",
+            "value": "NXT"
+        },
+        {
+            "name": "BRITISH LAND CO PLC ORD 25P",
+            "value": "BLND"
+        },
+        {
+            "name": "COMPASS GROUP PLC ORD 11 1/20P",
+            "value": "CPG"
+        },
+        {
+            "name": "RIGHTMOVE PLC ORD 0.1P",
+            "value": "RMV"
+        },
+        {
+            "name": "NATWEST GROUP PLC ORD 100P",
+            "value": "NWG"
+        },
+        {
+            "name": "BARCLAYS PLC ORD 25P",
+            "value": "BARC"
+        },
+        {
+            "name": "WHITBREAD PLC ORD 76 122/153P",
+            "value": "WTB"
+        },
+        {
+            "name": "LAND SECURITIES GROUP PLC ORD 10 2/3P",
+            "value": "LAND"
+        },
+        {
+            "name": "HOMESERVE PLC ORD 2 9/13P",
+            "value": "HSV"
+        },
+        {
+            "name": "GLENCORE PLC ORD USD0.01",
+            "value": "GLEN"
+        },
+        {
+            "name": "JD SPORTS FASHION PLC ORD 0.25P",
+            "value": "JD."
+        },
+        {
+            "name": "HSBC HLDGS PLC ORD $0.50 (UK REG)",
+            "value": "HSBA"
+        },
+        {
+            "name": "AUTO TRADER GROUP PLC ORD 1P",
+            "value": "AUTO"
+        },
+        {
+            "name": "ANTOFAGASTA PLC ORD 5P",
+            "value": "ANTO"
+        },
+        {
+            "name": "KINGFISHER PLC ORD 15 5/7P",
+            "value": "KGF"
+        },
+        {
+            "name": "3I GROUP PLC ORD 73 19/22P",
+            "value": "III"
+        },
+        {
+            "name": "ASHTEAD GROUP PLC ORD 10P",
+            "value": "AHT"
+        },
+        {
+            "name": "POLYMETAL INTERNATIONAL PLC ORD NPV",
+            "value": "POLY"
+        },
+        {
+            "name": "TAYLOR WIMPEY PLC ORD 1P",
+            "value": "TW."
+        },
+        {
+            "name": "ANGLO AMERICAN PLC ORD USD0.54945",
+            "value": "AAL"
+        },
+        {
+            "name": "INTERMEDIATE CAPITAL GROUP PLC ORD 26 1/4P",
+            "value": "ICP"
+        },
+        {
+            "name": "LLOYDS BANKING GROUP PLC ORD 10P",
+            "value": "LLOY"
+        },
+        {
+            "name": "LEGAL & GENERAL GROUP PLC ORD 2 1/2P",
+            "value": "LGEN"
+        },
+        {
+            "name": "OCADO GROUP PLC ORD 2P",
+            "value": "OCDO"
+        },
+        {
+            "name": "WPP PLC ORD 10P",
+            "value": "WPP"
+        },
+        {
+            "name": "INTERCONTINENTAL HOTELS GROUP PLC ORD 20 340/399P",
+            "value": "IHG"
+        },
+        {
+            "name": "AVIVA PLC ORD 25P",
+            "value": "AV."
+        },
+        {
+            "name": "SAGE GROUP PLC ORD 1 4/77P",
+            "value": "SGE"
+        },
+        {
+            "name": "BARRATT DEVELOPMENTS PLC ORD 10P",
+            "value": "BDEV"
+        },
+        {
+            "name": "SCHRODERS PLC VTG SHS £1",
+            "value": "SDR"
+        },
+        {
+            "name": "BURBERRY GROUP PLC ORD 0.05P",
+            "value": "BRBY"
+        },
+        {
+            "name": "PRUDENTIAL PLC ORD 5P",
+            "value": "PRU"
+        },
+        {
+            "name": "MELROSE INDUSTRIES PLC ORDS 48/7P",
+            "value": "MRO"
+        },
+        {
+            "name": "B&M EUROPEAN VALUE RETAIL S.A. ORD 10P (DI)",
+            "value": "BME"
+        },
+        {
+            "name": "AVEVA GROUP PLC ORD 3 5/9P",
+            "value": "AVV"
+        },
+        {
+            "name": "PHOENIX GROUP HOLDINGS PLC ORD 10P",
+            "value": "PHNX"
+        },
+        {
+            "name": "INTERTEK GROUP PLC ORD 1P",
+            "value": "ITRK"
+        },
+        {
+            "name": "ASSOCIATED BRITISH FOODS PLC ORD 5 15/22P",
+            "value": "ABF"
+        },
+        {
+            "name": "VODAFONE GROUP PLC ORD USD0.20 20/21",
+            "value": "VOD"
+        },
+        {
+            "name": "STANDARD LIFE ABERDEEN PLC ORD 13 61/63P",
+            "value": "SLA"
+        },
+        {
+            "name": "BAE SYSTEMS PLC ORD 2.5P",
+            "value": "BA."
+        },
+        {
+            "name": "COCA-COLA HBC AG ORD CHF6.70 (CDI)",
+            "value": "CCH"
+        },
+        {
+            "name": "LONDON STOCK EXCHANGE GROUP PLC ORD SHS 6 79/86P",
+            "value": "LSE"
+        },
+        {
+            "name": "EXPERIAN PLC ORD USD0.10",
+            "value": "EXPN"
+        },
+        {
+            "name": "PERSIMMON PLC ORD 10P",
+            "value": "PSN"
+        },
+        {
+            "name": "ROYAL DUTCH SHELL PLC 'A' ORD EUR0.07",
+            "value": "RDSA"
+        },
+        {
+            "name": "AVAST PLC ORD 10P",
+            "value": "AVST"
+        },
+        {
+            "name": "SAINSBURY(J) PLC ORD 28 4/7P",
+            "value": "SBRY"
+        },
+        {
+            "name": "BUNZL PLC ORD 32 1/7P",
+            "value": "BNZL"
+        },
+        {
+            "name": "ADMIRAL GROUP PLC ORD 0.1P",
+            "value": "ADM"
+        },
+        {
+            "name": "JUST EAT TAKEAWAY.COM N.V. ORD EUR0.04 (CDI)",
+            "value": "JET"
+        },
+        {
+            "name": "HARGREAVES LANSDOWN PLC ORD 0.4P",
+            "value": "HL."
+        },
+        {
+            "name": "NATIONAL GRID PLC ORD 12 204/473P",
+            "value": "NG."
+        },
+        {
+            "name": "FERGUSON PLC ORD 10P",
+            "value": "FERG"
+        },
+        {
+            "name": "MORRISON(WM.)SUPERMARKETS PLC ORD 10P",
+            "value": "MRW"
+        },
+        {
+            "name": "ROYAL DUTCH SHELL PLC 'B' ORD EUR0.07",
+            "value": "RDSB"
+        },
+        {
+            "name": "BP PLC $0.25",
+            "value": "BP."
+        },
+        {
+            "name": "SEVERN TRENT PLC ORD 97 17/19P",
+            "value": "SVT"
+        },
+        {
+            "name": "RIO TINTO PLC ORD 10P",
+            "value": "RIO"
+        },
+        {
+            "name": "FRESNILLO PLC ORD USD0.50",
+            "value": "FRES"
+        },
+        {
+            "name": "ROLLS-ROYCE HOLDINGS PLC ORD SHS 20P",
+            "value": "RR."
+        },
+        {
+            "name": "RSA INSURANCE GROUP PLC ORD GBP1.00",
+            "value": "RSA"
+        },
+        {
+            "name": "MONDI PLC ORD EUR 0.20",
+            "value": "MNDI"
+        },
+        {
+            "name": "EVRAZ PLC ORD USD0.05",
+            "value": "EVR"
+        },
+        {
+            "name": "SEGRO PLC ORD 10P",
+            "value": "SGRO"
+        },
+        {
+            "name": "M&G PLC ORD £0.05",
+            "value": "MNG"
+        },
+        {
+            "name": "HALMA PLC ORD 10P",
+            "value": "HLMA"
+        },
+        {
+            "name": "GLAXOSMITHKLINE PLC ORD 25P",
+            "value": "GSK"
+        },
+        {
+            "name": "SMITH & NEPHEW PLC ORD USD0.20",
+            "value": "SN."
+        },
+        {
+            "name": "CRH PLC ORD EUR 0.32",
+            "value": "CRH"
+        },
+        {
+            "name": "DIAGEO PLC ORD 28 101/108P",
+            "value": "DGE"
+        },
+        {
+            "name": "SPIRAX-SARCO ENGINEERING PLC ORD 26 12/13P",
+            "value": "SPX"
+        },
+        {
+            "name": "TESCO PLC ORD 5P",
+            "value": "TSCO"
+        },
+        {
+            "name": "SMITH (DS) PLC ORD 10P",
+            "value": "SMDS"
+        },
+        {
+            "name": "ASTRAZENECA PLC ORD SHS $0.25",
+            "value": "AZN"
+        },
+        {
+            "name": "UNILEVER PLC ORD 3 1/9P",
+            "value": "ULVR"
+        },
+        {
+            "name": "SMITHS GROUP PLC ORD 37.5P",
+            "value": "SMIN"
+        },
+        {
+            "name": "SSE PLC ORD 50P",
+            "value": "SSE"
+        },
+        {
+            "name": "BHP GROUP PLC ORD $0.50",
+            "value": "BHP"
+        },
+        {
+            "name": "BERKELEY GROUP HOLDINGS (THE) PLC ORD SHS 5P",
+            "value": "BKG"
+        },
+        {
+            "name": "ST.JAMES'S PLACE PLC ORD 15P",
+            "value": "STJ"
+        },
+        {
+            "name": "SCOTTISH MORTGAGE INV TST PLC ORD 5P",
+            "value": "SMT"
+        },
+        {
+            "name": "PEARSON PLC ORD 25P",
+            "value": "PSON"
+        },
+        {
+            "name": "BRITISH AMERICAN TOBACCO PLC ORD 25P",
+            "value": "BATS"
+        },
+        {
+            "name": "BT GROUP PLC ORD 5P",
+            "value": "BT.A"
+        },
+        {
+            "name": "CRODA INTERNATIONAL PLC ORD 10.609756P",
+            "value": "CRDA"
+        },
+        {
+            "name": "UNITED UTILITIES GROUP PLC ORD 5P",
+            "value": "UU."
+        },
+        {
+            "name": "RELX PLC ORD 14 51/116P",
+            "value": "REL"
+        },
+        {
+            "name": "HIKMA PHARMACEUTICALS PLC ORD SHS 10P",
+            "value": "HIK"
+        },
+        {
+            "name": "SMURFIT KAPPA GROUP PLC ORD EUR0.001",
+            "value": "SKG"
+        },
+        {
+            "name": "JOHNSON MATTHEY PLC ORD 110 49/53P",
+            "value": "JMAT"
+        },
+        {
+            "name": "RENTOKIL INITIAL PLC ORD 1P",
+            "value": "RTO"
+        },
+        {
+            "name": "RECKITT BENCKISER GROUP PLC ORD 10P",
+            "value": "RB."
+        },
+        {
+            "name": "IMPERIAL BRANDS PLC ORD 10P",
+            "value": "IMB"
+        },
+        {
+            "name": "FLUTTER ENTERTAINMENT PLC ORD EUR0.09",
+            "value": "FLTR"
+        },
+        {
+            "name": "PENNON GROUP PLC ORD 40.7P",
+            "value": "PNN"
+        },
+        {
+            "name": "DCC PLC ORD EUR0.25",
+            "value": "DCC"
+        },
+        {
+            "name": "GVC HOLDINGS PLC ORD EUR0.01",
+            "value": "GVC"
+        }
+    ]
+}

@@ -1,0 +1,172 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Office UI Fabric, visit https://developer.microsoft.com/fabric. -->
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+    <script src="functions.js"></script>
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <img width="90" height="90" src="../../assets/logo-filled.png" alt="Contoso" title="Contoso" />
+    </header>
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <div class="ui buttons">
+            <button id="create-scorecard" class="ui labeled icon button">
+                <i class="copy icon"></i>
+                Create Scorecard
+            </button>
+            <button id="reset" class="ui icon button" style="margin-left:20px;">
+                <i class="trash alternate icon"></i>
+            </button>
+        </div>
+        <div class="ui divider"></div>
+        <div class="ui sub header">Select Companies to Evaluate</div>
+        <div class="ui fluid multiple search normal selection dropdown">
+            <input type="hidden" name="country">
+            <i class="dropdown icon"></i>
+            <div class="default text">Select Company</div>
+            <div class="menu"></div>
+        </div>
+        <div class="pd-top-10">
+            <button id="add-to-eval" class="ui right labeled icon button">
+                <i class="right arrow icon"></i>
+                Add to Evaluation
+            </button>
+        </div>
+        <div class="ui divider"></div>
+        <button id="reset" class="ui primary right labeled icon button">
+            <i class="save icon"></i>
+            Submit Scorecard
+        </button>
+
+    </main>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            getCompaniesData();
+        });
+
+        $('#create-scorecard').click(function () {
+            console.log("Create Scorecard Clicked");
+            createScorecard();
+        });
+        $('#reset').click(function () {
+            console.log("Create Scorecard Clicked");
+            resetSheet();
+            $('.ui.dropdown').dropdown('clear');
+        });
+
+        $('#add-to-eval').click(function () {
+            var selStr = $('.ui.dropdown').dropdown('get value');
+            var selvals = selStr.split(",");
+            $(selvals).each(function (idx) {
+                console.log(selvals[idx]);
+                addToEval(selvals[idx]);
+            });
+
+
+        });
+
+
+        function getCompaniesData() {
+            let url = "/assets/data.json";
+            fetch(url)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (json) {
+                    $('.ui.dropdown')
+                        .dropdown({
+                            values: json.results
+                        });
+                })
+        };
+
+        function resetSheet() {
+            Excel.run(function (context) {
+                    var currentWorksheet = context.workbook.worksheets.getActiveWorksheet();
+                    currentWorksheet.getRange().clear()
+                    return context.sync();
+                })
+                .catch(function (error) {
+                    console.log("Error: " + error);
+                    if (error instanceof OfficeExtension.Error) {
+                        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                    }
+                });
+        }
+
+        function createScorecard() {
+            Excel.run(function (context) {
+                var currentWorksheet = context.workbook.worksheets.getActiveWorksheet();
+                currentWorksheet.getRange().clear()
+                var currRange = currentWorksheet.getRange("A1:A50");
+                var template = context.workbook.worksheets.getItem("Template");
+                var scorecard = template.getRange("A1:A50")
+                currRange.copyFrom(scorecard);
+                currRange.format.autofitColumns();
+                return context.sync();
+            }).catch(function (error) {
+                console.log("Error: " + error);
+                if (error instanceof OfficeExtension.Error) {
+                    console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                }
+            });
+        }
+
+        function addToEval(comapnyName) {
+            Excel.run(function (context) {
+                var currentWorksheet = context.workbook.worksheets.getActiveWorksheet();
+                var usedRange = currentWorksheet.getUsedRangeOrNullObject(true);
+                var lastColumn = usedRange.getLastColumn();
+                var nextRange = lastColumn.getOffsetRange(0, 1);
+
+                var template = context.workbook.worksheets.getItem("Template");
+                var scorecard = template.getRange("D1:D50")
+                nextRange.copyFrom(scorecard);
+                nextRange.format.autofitColumns();
+                var headerRow = nextRange.getRow(0);
+                headerRow.values = [
+                    [comapnyName]
+                ];
+                return context.sync();
+            }).catch(function (error) {
+                console.log("Error: " + error);
+                if (error instanceof OfficeExtension.Error) {
+                    console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                }
+            })
+
+        }
+    </script>
+
+</body>
+
+</html>
